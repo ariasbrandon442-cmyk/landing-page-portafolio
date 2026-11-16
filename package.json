@@ -1,0 +1,11 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Landing page de portafolio profesional con validaciones y plan de pruebas (Nuevas Tecnologías, Semana 4)",
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.js\""
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.0"
+  }
+}

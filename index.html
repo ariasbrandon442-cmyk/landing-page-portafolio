@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Brandon Garcia Arias: desarrollo web, automatización y soluciones con IA.">
+  <title>Brandon Garcia Arias — Ingeniero de Sistemas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="salto" href="#inicio">Ir al contenido principal</a>
+
+  <header class="barra" role="banner">
+    <p class="marca">Brandon Garcia Arias</p>
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero" aria-labelledby="titulo-inicio">
+      <h1 id="titulo-inicio">Servicios profesionales de ingeniería de software</h1>
+      <p class="hero-texto">
+        Diseño y construyo aplicaciones web rápidas, accesibles y con pruebas automatizadas.
+        Especialidad en desarrollo front-end, integración de APIs y automatización de procesos con IA.
+      </p>
+      <a class="boton" href="#contacto">Contáctame</a>
+    </section>
+
+    <section id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+      <h2 id="titulo-sobre-mi">Sobre mí</h2>
+      <div class="tarjeta">
+        <p>
+          Soy estudiante de Ingeniería de Sistemas de UNIMINUTO. Me apasiona convertir
+          problemas reales en software simple y bien probado. Trabajo con tecnologías web
+          estándar y me enfoco en la calidad del código, la accesibilidad y la experiencia
+          de la persona usuaria.
+        </p>
+        <p>
+          En mis proyectos recientes he integrado APIs públicas, procesamiento de datos en
+          tiempo real y pipelines de automatización en la nube.
+        </p>
+      </div>
+    </section>
+
+    <section id="habilidades" aria-labelledby="titulo-habilidades">
+      <h2 id="titulo-habilidades">Habilidades</h2>
+      <ul class="habilidades" aria-label="Lista de habilidades técnicas">
+        <li>HTML5 semántico y accesible</li>
+        <li>CSS3 responsivo</li>
+        <li>JavaScript (ES2023)</li>
+        <li>React</li>
+        <li>Python</li>
+        <li>Git y GitHub</li>
+        <li>Pruebas unitarias y funcionales</li>
+        <li>Consumo de APIs REST</li>
+      </ul>
+    </section>
+
+    <section id="proyectos" aria-labelledby="titulo-proyectos">
+      <h2 id="titulo-proyectos">Proyectos</h2>
+      <div class="proyectos">
+        <article class="tarjeta proyecto">
+          <h3>Pokédex Web</h3>
+          <p>
+            Aplicación con JavaScript puro que consume la PokeAPI: búsqueda por nombre,
+            fichas con estadísticas y carga diferida. Sin dependencias externas.
+          </p>
+        </article>
+        <article class="tarjeta proyecto">
+          <h3>Tracker de criptomonedas</h3>
+          <p>
+            Tablero en React con precios de las 30 criptomonedas principales en tiempo real
+            y módulo personal de seguimiento de ahorro.
+          </p>
+        </article>
+        <article class="tarjeta proyecto">
+          <h3>Transcriptor de clases con IA</h3>
+          <p>
+            Pipeline en la nube que descarga grabaciones, las transcribe con reconocimiento
+            de voz y genera notas automáticas, desplegado con GitHub Actions.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto">Contacto</h2>
+      <div class="tarjeta">
+        <form id="formulario" novalidate aria-describedby="ayuda-formulario">
+          <p id="ayuda-formulario" class="ayuda">
+            Los campos marcados con <span aria-hidden="true">*</span> son obligatorios.
+          </p>
+
+          <div class="campo">
+            <label for="nombre">Nombre completo <span aria-hidden="true">*</span></label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              autocomplete="name"
+              required
+              aria-required="true"
+              aria-describedby="error-nombre"
+            >
+            <p class="error" id="error-nombre" role="alert" hidden></p>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico <span aria-hidden="true">*</span></label>
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              autocomplete="email"
+              required
+              aria-required="true"
+              aria-describedby="error-correo"
+            >
+            <p class="error" id="error-correo" role="alert" hidden></p>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              required
+              aria-required="true"
+              aria-describedby="error-mensaje"
+            ></textarea>
+            <p class="error" id="error-mensaje" role="alert" hidden></p>
+          </div>
+
+          <button type="submit" class="boton">Enviar mensaje</button>
+          <p class="exito" id="mensaje-exito" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>© 2026 Brandon Garcia Arias — Portafolio profesional</p>
+  </footer>
+
+  <script src="validaciones.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
