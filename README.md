@@ -48,5 +48,5 @@ resultados reales en [INFORME_PRUEBAS.md](INFORME_PRUEBAS.md).
 
 ## Despliegue
 
+- Repositorio: https://github.com/ariasbrandon442-cmyk/landing-page-portafolio
 - Demo en línea: _agregar aquí la URL de Netlify_
-- Repositorio: _agregar aquí la URL de GitHub_
